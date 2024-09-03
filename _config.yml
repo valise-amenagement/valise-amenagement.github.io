@@ -1,5 +1,5 @@
 collections
-  definition
+  definition:
     output: true
     title: 'Aménagement économique: de quoi parle-t-on ?'
     order:
@@ -8,13 +8,13 @@ collections
       - qu_est_ce_qu_une_zone_d_activites.md
       - zones_d_activites_dans_amenagement_economique.md
       - idees_recues_ZAE.md
-  histoire
+  histoire:
     output: true
     title: 'Petite histoire des modèles d'aménagement économique'
     order:
       - formes_d_amenagement_economique_et_evolution.md
       - racines_du_modele_d_amenagement_actuel.md
-  enjeux
+  enjeux:
     output: true
     title: 'Problématiques et enjeux contemporains de l'aménagement économique'
     order:
@@ -22,7 +22,7 @@ collections
       - interdependances_urbain_rural_metropolisation.md
       - defis_transition_ecologique.md
       - competitivite_attractivite.md
-  reflexion
+  reflexion:
     output: true
     title: 'Axes de réflexion institutionnels en matière d'aménagement économique'
     order:
@@ -30,13 +30,13 @@ collections
       - format_et_place_des_ZAE.md
       - retour_du_tissu_urbain.md
       - ancrage_d_une_activite_durable.md
-  nouvelles_formes
+  nouvelles_formes:
     output: true
     title: 'Nouvelles formes d'aménagement économique'
     order:
       - innovations_territoriales_immobilier_et_espaces_economiques.md
       - modeles_emergents.md
-  methodes_outils_reference
+  methodes_outils_reference:
     output: true
     title: 'Petite histoire des modèles d'aménagement économique'
     order:
