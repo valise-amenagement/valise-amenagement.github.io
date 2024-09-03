@@ -3,7 +3,7 @@
     <nav>
         <ul>
             {% for collection in site.collections %}
-            <li><a href="{{ collection.relative_directory }}">{{ collection.label }}</a></li>
+            <li><a href="{{ collection.directory }}">{{ collection.title }}</a></li>
             {% endfor %}
         </ul> 
     </nav>
