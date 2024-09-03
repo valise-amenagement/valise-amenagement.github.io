@@ -7,8 +7,10 @@ layout: default
     <h2>{{ collection.title }}</h2>
     {% for article in collection.docs %}
     {% if article.title != collection.title %}
-    <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-    {{ article.content | markdownify }}
+    <section>
+        <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+        {{ article.content | markdownify }}
+    </section>
     {% endif %}
     {% endfor %}
 {% endif %}
