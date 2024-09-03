@@ -2,6 +2,7 @@
 layout: default
 ---
 {% assign collection = page.collection %}
+<p>{{ collection }}</p>
 <article> <!-- Voir si intérêt d'ajouter sommaire en tête de page -->
     <h2>{{ site.collection.title }}</h2>
     {% for article in site.collection %}
