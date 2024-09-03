@@ -36,7 +36,7 @@ collections:
     order:
       - innovations_territoriales_immobilier_et_espaces_economiques.md
       - modeles_emergents.md
-  methodes_outils_reference:
+  methodes_outils_references:
     output: true
     title: "Méthodes, outils et références"
     order:
