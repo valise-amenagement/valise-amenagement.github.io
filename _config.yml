@@ -38,7 +38,7 @@ collections:
       - modeles_emergents.md
   methodes_outils_reference:
     output: true
-    title: "Petite histoire des modèles d'aménagement économique"
+    title: "Méthodes, outils et références"
     order:
       - incontournables_de_l_observatoire_de_l_amenagement_economique.md
       - outils_planification.md
