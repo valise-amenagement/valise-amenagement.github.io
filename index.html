@@ -20,9 +20,9 @@ title : DDTM 35 - Valise pédagogique de l'aménagement économique (VPAE)
     {% for collection in site.collections %}
     {% if collection.label != "posts" %}
     <section>
-        <h3><a href="{{ collection.relative_directory }}">{{ collection.title }}</a></h3>
+        <h3><a href="/{{ collection.label }}">{{ collection.title }}</a></h3>
         <ul>
-        {% for article in collection %}
+        {% for article in site.collection.label %}
             <li><a href="{{ article.url }}">{{ article.title }}</a></li>
         {% endfor %}
         </ul>
