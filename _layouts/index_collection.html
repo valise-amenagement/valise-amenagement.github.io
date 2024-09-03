@@ -8,7 +8,7 @@ layout: default
     {% for article in collection.docs %}
     {% if article.title != collection.title %}
     <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-    {{ article.content | mardownify }}
+    {{ article.content | markdownify }}
     {% endif %}
     {% endfor %}
 {% endif %}
