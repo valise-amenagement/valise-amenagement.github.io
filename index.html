@@ -1,0 +1,32 @@
+---
+layout: default
+title : DDTM 35 - Valise pédagogique de l'aménagement économique (VPAE)
+---
+<!-- Messages de mise à jour. Utilise le système de post pour afficher les informations relatives à la dernière mise à jour -->
+<section>
+    <h2><a href="maj.html">Dernières mises à jour</a></h2>
+    {% for post in site.posts limite:2 %} 
+    <h3>{{ post author }} le {{ post.date }} - {{ post.title }}</h3>
+    {{ post.content | mardownify }}
+    {% endfor %}
+    <p><a href="maj.html">Voir l'historique des mises à jour</a></p>
+</section>
+
+<!-- Présentation des différents axes et sous-axes de la valise pédagogique
+ Utilise le système de collection pour prévoir une évolution possible des axes et sous-axes -->
+
+<section>
+    <h2>Contenu de la valise pédagogique</h2>
+    {% for collection in site.collections %}
+    {% if collection.label != "posts" %}
+    <section>
+        <h3><a href="{{ collection.relative_directory }}">{{ collection.title }}</a></h3>
+        <ul>
+        {% for article in collection %}
+            <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+    {% endfor %}
+</section>

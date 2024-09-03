@@ -1,0 +1,12 @@
+---
+layout: default
+title: Historique des mises à jour
+---
+<!--Historique des 10 dernières mises à jour-->
+<section>
+    <h2>Historique des dernières mises à jour</h2>
+    {% for post in site.posts limite:10 %}
+    <h3>{{post author}} le {{post.date}} - {{ post.title }}</h3>
+    {{ post.content | mardownify }}
+    {% endfor %}
+</section>

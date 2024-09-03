@@ -1,0 +1,10 @@
+<header>
+    <h1>DDTM35 - Valise Pédagogique de l'aménagement économique</h1>
+    <nav>
+        <ul>
+            {% for collection in site.collections %}
+            <li><a href="{{ collection.relative_directory }}">{{ collection.label }}</a></li>
+            {% endfor %}
+        </ul> 
+    </nav>
+</header>

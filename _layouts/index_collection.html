@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<article> <!-- Voir si intérêt d'ajouter sommaire en tête de page -->
+    <h2>{{ site.page.collection.title }}</h2>
+    {% for article in site.page.collection %}
+    <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+    {{ article.content | mardownify }}
+    {% endfor %}
+</article>
