@@ -8,5 +8,6 @@ layout: default
     {% if article.title != collection.title %}
     <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
     {{ article.content | mardownify }}
+    {% endif %}
     {% endfor %}
 </article>
