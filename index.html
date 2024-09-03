@@ -22,7 +22,8 @@ title : DDTM 35 - Valise pédagogique de l'aménagement économique (VPAE)
     <section>
         <h3><a href="/{{ collection.label }}">{{ collection.title }}</a></h3>
         <ul>
-        {% for article in site.definition %}
+        {% assign axe = collection.label %}
+        {% for article in site.axe %}
             <li><a href="{{ article.url }}">{{ article.title }}</a></li>
         {% endfor %}
         </ul>
