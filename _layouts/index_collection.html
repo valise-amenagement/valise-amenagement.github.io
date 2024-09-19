@@ -9,7 +9,7 @@ layout: default
     {% if article.title != collection.title %}
     <section>
         <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
-        {{ article.content }}
+        {{ article.content | markdownify }}
     </section>
     {% endif %}
     {% endfor %}
