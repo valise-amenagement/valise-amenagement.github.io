@@ -2,34 +2,19 @@
 layout: default
 title : Valise pédagogique de l'aménagement économique (VPAE)
 ---
-<!-- Messages de mise à jour. Utilise le système de post pour afficher les informations relatives à la dernière mise à jour -->
-<section>
-    <h2><a href="maj.html">Dernières mises à jour</a></h2>
-    {% for post in site.posts limite:2 %} 
-    <h3>{{ post author }} le {{ post.date }} - {{ post.title }}</h3>
-    {{ post.content | mardownify }}
-    {% endfor %}
-    <p><a href="maj.html">Voir l'historique des mises à jour</a></p>
-</section>
-
-<!-- Présentation des différents axes et sous-axes de la valise pédagogique
- Utilise le système de collection pour prévoir une évolution possible des axes et sous-axes
- On retire la collection correspond aux posts (hardcoded) et on retire les pages index de chaque collection (linkées via titre) -->
-
+<!-- Présentation des différents axes et sous-axes de la valise pédagogique -->
 <section>
     <h2>Contenu de la valise pédagogique</h2>
-    {% for collection in site.collections %}
-    {% if collection.label != "posts" %}
+    {% for category in site.categories %}
+    <!-- On utilise le fichier YAML links pour rechercher l'intitulé de la catégorie -->
+    {% assign links = site.data.links[category[0]] %}
     <section>
-        <h3><a href="/{{ collection.label }}">{{ collection.title }}</a></h3>
+        <h3><a href="/{{ category[0] | slugify }}">#{{ category[0] }} | {{ links.title }}</a></h3>
         <ul>
-        {% for article in collection.docs %}
-        {% if article.title != collection.title %}
-            <li><a href="{{ article.url }}">{{ article.title }}</a></li>
-        {% endif %}
-        {% endfor %}
+            {% for post in category[1] %}
+            <li><a href="/{{ [category[0]] | slugify }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a></li>
+            {% endfor %}
         </ul>
     </section>
-    {% endif %}
     {% endfor %}
 </section>

@@ -1,46 +1,18 @@
-collections:
-  definition:
-    output: true
-    title: "Aménagement économique: de quoi parle-t-on ?"
-    order:
-      - qu_est_ce_que_l_amenagement_economique.md
-      - amenagement_economique_dans_politique_d_amenagement.md
-      - qu_est_ce_qu_une_zone_d_activites.md
-      - zones_d_activites_dans_amenagement_economique.md
-      - idees_recues_ZAE.md
-  histoire:
-    output: true
-    title: "Petite histoire des modèles d'aménagement économique"
-    order:
-      - formes_d_amenagement_economique_et_evolution.md
-      - racines_du_modele_d_amenagement_actuel.md
-  enjeux:
-    output: true
-    title: "Problématiques et enjeux contemporains de l'aménagement économique"
-    order:
-      - covid_reindustrialisation_relocalisation.md
-      - interdependances_urbain_rural_metropolisation.md
-      - defis_transition_ecologique.md
-      - competitivite_attractivite.md
-  reflexion:
-    output: true
-    title: "Axes de réflexion institutionnels en matière d'aménagement économique"
-    order:
-      - reseau_et_cooperation_des_territoires.md
-      - format_et_place_des_ZAE.md
-      - retour_du_tissu_urbain.md
-      - ancrage_d_une_activite_durable.md
-  nouvelles_formes:
-    output: true
-    title: "Nouvelles formes d'aménagement économique"
-    order:
-      - innovations_territoriales_immobilier_et_espaces_economiques.md
-      - modeles_emergents.md
-  methodes_outils_references:
-    output: true
-    title: "Méthodes, outils et références"
-    order:
-      - incontournables_de_l_observatoire_de_l_amenagement_economique.md
-      - outils_planification.md
-      - ouitls_amenagement_operationnel.md
-      - objets_cooperation_interterritoriale.md
+plugins:
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - categories
+  layouts:
+    category: category_archive
+  permalinks:
+    category: '/:name/'
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

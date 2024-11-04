@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<!-- On utile le fichier YAML links pour rechercher l'intitulé, les fiches techniques et les ressources de la catégorie -->
+{% assign links = site.data.links[page.title] %}
+<!-- Présentation et développement des sous-parties de chaque axe de la valise pédagogique -->
+<article>
+    <h2>#{{ page.title }} | {{ links.title }}</h2>
+    {% for post in page.posts %}
+    <section>
+        <h3 id="{{ post.title | slugify }}">{{ post.title }}</h3>
+        {{ post.content }} <!-- Voir si nécessaire d'ajouter du |mardownify étant donné que les posts sont systématiquement générés-->
+    </section>
+    {% endfor %}
+    {% if links.sheets %}
+    <aside>
+        <ul>
+            {% for sheet in links.sheets %}
+            <li><a href="../assets/sheets/{{ sheet.name }}">{{ sheet.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </aside>
+    {% endif %}
+    {% if links.resources %}
+    <aside>
+         <ul>
+            {% for resource in links.resources }
+            <li><a href="../assets/resources/{{ resource.name }}">{{ ressource.title }}</a></li>
+            {% endfor %}
+         </ul>
+     </aside>
+</article>

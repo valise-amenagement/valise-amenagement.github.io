@@ -2,11 +2,8 @@
     <h1><a href="/">Valise Pédagogique de l'aménagement économique</a></h1>
     <nav>
         <ul>
-            {% for collection in site.collections %}
-            {% if collection.label != "posts" %}
-            <li><a href="/{{ collection.label }}">{{ collection.title }}</a></li>
-            {% endif %}
-            {% endfor %}
+            {% for category in site.categories %}
+            <li><a href="/{{ category[0] }}">{{ category[0] }}</a></li>
         </ul> 
     </nav>
 </header>

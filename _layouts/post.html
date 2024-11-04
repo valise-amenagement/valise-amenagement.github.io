@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<!-- Pas sûr d'avoir besoin de ce niveau de présentation si le système d'ancre du layout archive fonctionne -->
+<article>
+    {% assign category_spec = site.data.category_spec[page.categories[0]] %}
+    <h2>#{{ category_spec.name }} | {{ category_spec.title }}</h2>
+    <h3>{{ page.title }}</h3>
+    {{ content }}
+</article>
+<!-- On utilise le CSV "nom du CSV" pour lister les fiches techniques et documents ressources associés à chaque axe-->
