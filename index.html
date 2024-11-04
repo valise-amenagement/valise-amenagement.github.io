@@ -1,6 +1,6 @@
 ---
 layout: default
-title : Valise pédagogique de l'aménagement économique (VPAE)
+title : "Valise pédagogique de l'aménagement économique (VPAE)"
 ---
 <!-- Présentation des différents axes et sous-axes de la valise pédagogique -->
 <section>
@@ -12,7 +12,7 @@ title : Valise pédagogique de l'aménagement économique (VPAE)
         <h3><a href="/{{ category[0] | slugify }}">#{{ category[0] }} | {{ links.title }}</a></h3>
         <ul>
             {% for post in category[1] %}
-            <li><a href="/{{ [category[0]] | slugify }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a></li>
+            <li><a href="/{{ category[0]] | slugify }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </section>
