@@ -7,12 +7,13 @@ title : "Valise pédagogique de l'aménagement économique (VPAE)"
     <h2>Contenu de la valise pédagogique</h2>
     {% for category in site.categories %}
     <!-- On utilise le fichier YAML links pour rechercher l'intitulé de la catégorie -->
-    {% assign links = site.data.links[category[0]] %}
+    {% assign type = category[0] %}
+    {% assign links = site.data.links[type] %}
     <section>
-        <h3><a href="/{{ category[0] }}/">#{{ links.name }} | {{ links.title }}</a></h3>
+        <h3><a href="/{{ type }}/">#{{ links.name }} | {{ links.title }}</a></h3>
         <ul>
             {% for post in category[1] %}
-            <li><a href="/{{ category[0] }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a></li>
+            <li><a href="/{{ type }}/index.html#{{ post.title | slugify }}">{{ post.title }}</a></li>
             {% endfor %}
         </ul>
     </section>
