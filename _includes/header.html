@@ -3,7 +3,9 @@
     <nav>
         <ul>
             {% for category in site.categories %}
-            <li><a href="/{{ category[0] }}/">{{ category[0] }}</a></li>
+            {% assign type = category[0] %}
+            {% assign links = site.data.links[type] %}
+            <li><a href="/{{ type }}/">{{ links.name }}</a></li>
             {% endfor %}
         </ul> 
     </nav>
