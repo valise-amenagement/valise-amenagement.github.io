@@ -1,14 +1,3 @@
-plugins:
-  - jekyll-archives
-
-jekyll-archives:
-  enabled:
-    - categories
-  layouts:
-    category: category_archive
-  permalinks:
-    category: '/:name/'
-
 defaults:
   -
     scope:
