@@ -11,11 +11,12 @@ layout: default
             {% for post in category[1] %}
             <section>
                 <h3 id="{{ post.title | slugify }}">{{ post.title }}</h3>
-                {{ post.content }} <!-- Voir si nécessaire d'ajouter du |mardownify étant donné que les posts sont systématiquement générés-->
+                {{ post.content }}
             </section>
             {% endfor %}
             {% if links.sheets %}
             <aside>
+                <h3>Des fiches techniques pour approfondir</h3>
                 <ul>
                     {% for sheet in links.sheets %}
                     <li><a href="../assets/sheets/{{ sheet.name }}">{{ sheet.title }}</a></li>
@@ -25,6 +26,7 @@ layout: default
             {% endif %}
             {% if links.resources %}
             <aside>
+                <h3>Quelques documents ressources utiles pour aller plus loin</h3>
                 <ul>
                     {% for resource in links.resources %}
                     <li><a href="../assets/resources/{{ resource.name }}">{{ ressource.title }}</a></li>

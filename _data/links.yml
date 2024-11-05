@@ -8,7 +8,7 @@ definitions:
     -
       name: "fiche2.pdf"
       title: "Une deuxième fiche technique pour aller encore plus loin"
-  resources: none
+  resources: FALSE
 histoire:
   name: "Histoire"
   title: "Petite histoire des modèles d'aménagement économique"
