@@ -1,5 +1,5 @@
 ---
-layout: category_archive
+layout: category_index
 type: definitions
-title: Défintions
+title: Définitions
 ---
