@@ -8,7 +8,8 @@ layout: default
     <h2>#{{ links.name }} | {{ links.title }}</h2>
     {% for category in site.categories %}
         {% if category[0] == page.type %}
-            {% for post in category[1] %}
+        {% assign posts = category[1] | sort: 'date' %}
+            {% for post in posts %}
             <section>
                 <h3 id="{{ post.title | slugify }}">{{ post.title }}</h3>
                 {{ post.content }}
