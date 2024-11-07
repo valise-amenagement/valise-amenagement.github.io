@@ -1,6 +1,6 @@
 ---
 title: "Les zones d'activités dans l'aménagement économiques des territoires"
-category : definitions
+category: definitions
 ---
 #### Sous-titre n°1
 Le texte pour parler du sous titre n°1. Avec des passages en ***gras et italique*** et des passages en **gras tout court** et des passages en *italiques*
