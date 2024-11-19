@@ -1,6 +1,6 @@
 ---
 title: "Les modèles émergents d'aménagement économique"
-category: formes
+category: formats
 ---
 #### Sous-titre n°1
 Le texte pour parler du sous titre n°1. Avec des passages en ***gras et italique*** et des passages en **gras tout court** et des passages en *italiques*

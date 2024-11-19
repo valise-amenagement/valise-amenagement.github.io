@@ -1,5 +1,5 @@
 ---
 layout: category_index
-type: formes
+type: formats
 title: Nouvelles Formes
 ---
