@@ -12,25 +12,25 @@ definitions:
 histoire:
   name: "Histoire"
   title: "Petite histoire des modèles d'aménagement économique"
-  sheets: none
-  resources: none
+  sheets: FALSE
+  resources: FALSE
 enjeux:
   name: "Enjeux"
   title: "Problématiques et enjeux contemporains de l'aménagement économique"
-  sheets: none
-  resources: none
+  sheets: FALSE
+  resources: FALSE
 reflexions:
   name: "Réflexions"
   title: "Axes de réflexion institutionnels en matière d'aménagement économique"
-  sheets: none
-  resources: none
+  sheets: FALSE
+  resources: FALSE
 formats:
   name: "Nouveaux Formats"
   title: "Nouvelles formes d'aménagement économique"
-  sheets: none
-  resources: none
+  sheets: FALSE
+  resources: FALSE
 outils:
-  name: "Outils"
+  name: "Méthodes & Outils"
   title: "Méthodes et outils de l'aménagement économique"
-  sheets: none
-  resources: none
+  sheets: FALSE
+  resources: FALSE
